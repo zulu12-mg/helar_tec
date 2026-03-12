@@ -7,7 +7,8 @@ basadas en palabras clave para el asistente virtual de la página web.
 Este módulo implementa un chatbot simple que responde a consultas comunes
 sobre la empresa Herlartec, sus servicios y formas de contacto.
 """
-
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 # ===== IMPORTACIONES =====
 
 import logging
@@ -33,6 +34,13 @@ app = FastAPI(
     description="API para el chat de IA del sitio web de HELAR-TEC",
     version="1.0.0"
 )
+# ===== SERVIR FRONTEND =====
+
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
+
+@app.get("/")
+def home():
+    return FileResponse("frontend/index.html")
 
 # Configurar CORS para permitir peticiones desde el frontend
 # NOTA: En producción, especificar dominios permitidos en lugar de ["*"]
@@ -156,6 +164,7 @@ def chat(data: Message) -> Dict[str, str]:
     except Exception as e:
         logger.error(f"Error procesando mensaje: {str(e)}")
         raise HTTPException(status_code=500, detail="Error interno del servidor")
+    
 
 # ===== EJECUCIÓN DEL SERVIDOR =====
 
