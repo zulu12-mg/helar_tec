@@ -1815,22 +1815,32 @@ font-size:14px;
 @media (prefers-color-scheme: dark) {
 
 .chatbot-container {
-    background: #1e1e1e;
+    background: #1f1f1f;
     color: #ffffff;
 }
 
 .chatbot-header {
-    background: #d89ab3; /* rosa pastel helartec */
+    background: #e7a6c4; /* rosa pastel */
+    color: white;
 }
 
 .chatbot-messages {
     background: #2a2a2a;
 }
 
-.chatbot-input {
+.chatbot-input input {
     background: #333;
     color: white;
     border: 1px solid #555;
+}
+
+.chatbot-message.bot {
+    background: #3a3a3a;
+}
+
+.chatbot-message.user {
+    background: #e7a6c4;
+    color: white;
 }
 
 }
