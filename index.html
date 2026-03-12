@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELARV TEC - Soluciones de Software para Heladerías</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="light">
+    <!-- Pantalla de carga inicial -->
+    <div class="loader" id="loader">
+        <div class="ice-cream-loader">
+            <div class="cone-loader"></div>
+            <div class="scoop-loader scoop1-loader"></div>
+            <div class="scoop-loader scoop2-loader"></div>
+            <div class="scoop-loader scoop3-loader"></div>
+            <div class="cherry-loader"></div>
+        </div>
+        <h2>HELAR-TEC</h2>
+        <p>Cargando dulzura...</p>
+    </div>
+
+    <!-- Cabecera con navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-header">
+                    <div class="logo-img-wrapper">
+                        <img src="logo-helar.jpeg" alt="HELARV TEC Logo" class="logo-img">
+                    </div>
+                </div>
+
+                <nav class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="#caracteristicas" class="nav-link"><i class="fas fa-star"></i> Características</a></li>
+                        <li><a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="sun-icon"><i class="fas fa-sun"></i></span>
+                        <span class="moon-icon"><i class="fas fa-moon"></i></span>
+                    </button>
+                    <button class="btn-login">
+                        <i class="fas fa-sign-in-alt"></i> Acceder
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección principal del hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Gestiona tu heladería</span>
+                        <span class="title-line">con <span class="text-ice">dulzura</span> digital</span>
+                    </h1>
+                    <p class="hero-description">
+                        HELAR-TEC es el sistema de inventario diseñado exclusivamente para heladerías.
+                        Controla tu stock, optimiza pedidos y aumenta tu rentabilidad con una solución
+                        tan dulce como tu negocio.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn-primary">
+                            <i class="fas fa-play-circle"></i> Ver Demo Gratis
+                        </a>
+                        <a href="#contacto" class="btn-secondary">
+                            <i class="fas fa-calendar-check"></i> Agendar Consulta
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">+150</div>
+                            <div class="stat-text">Heladerías</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-text">Satisfacción</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">-40%</div>
+                            <div class="stat-text">Desperdicio</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ice-cream-hero">
+                        <div class="ice-cone"></div>
+                        <div class="ice-scoop scoop-1">
+                            <div class="drip drip-1"></div>
+                            <div class="drip drip-2"></div>
+                        </div>
+                        <div class="ice-scoop scoop-2">
+                            <div class="drip drip-3"></div>
+                        </div>
+                        <div class="ice-scoop scoop-3"></div>
+                        <div class="sprinkles">
+                            <span class="sprinkle"></span>
+                            <span class="sprinkle"></span>
+                            <span class="sprinkle"></span>
+                            <span class="sprinkle"></span>
+                            <span class="sprinkle"></span>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>+35% Ventas</h4>
+                        <p>Con nuestro sistema</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de características -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-ice-cream"></i>
+                    Características <span class="highlight">Especiales</span>
+                </h2>
+                <p class="section-subtitle">Todo lo que necesitas en un solo lugar</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Inventario Inteligente</h3>
+                    <p>Controla stock de sabores, ingredientes y productos en tiempo real con alertas automáticas.</p>
+                    <div class="feature-chips">
+                        <span class="chip">Tiempo real</span>
+                        <span class="chip">Alertas</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Análisis de Ventas</h3>
+                    <p>Descubre tus sabores más populares, tendencias estacionales y optimiza tu menú.</p>
+                    <div class="feature-chips">
+                        <span class="chip">Reportes</span>
+                        <span class="chip">Tendencias</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>App Móvil</h3>
+                    <p>Gestiona tu heladería desde cualquier lugar con nuestra app iOS y Android.</p>
+                    <div class="feature-chips">
+                        <span class="chip">iOS</span>
+                        <span class="chip">Android</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Costo por Sabor</h3>
+                    <p>Calcula automáticamente el costo real de cada sabor y maximiza tu margen.</p>
+                    <div class="feature-chips">
+                        <span class="chip">Costos</span>
+                        <span class="chip">Margen</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Alertas Inteligentes</h3>
+                    <p>Recibe notificaciones antes de quedarte sin ingredientes clave.</p>
+                    <div class="feature-chips">
+                        <span class="chip">Notificaciones</span>
+                        <span class="chip">Prevención</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Backup en la Nube</h3>
+                    <p>Tus datos seguros siempre, incluso si tu equipo falla.</p>
+                    <div class="feature-chips">
+                        <span class="chip">Seguro</span>
+                        <span class="chip">Accesible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section class="testimonials" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-comment-dots"></i>
+                    Lo que dicen <span class="highlight">nuestros clientes</span>
+                </h2>
+                <p class="section-subtitle">Heladerías que ya disfrutan de HELARV TEC</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Desde que implementamos HELARV TEC, redujimos el desperdicio en un 45%
+                                y nuestras ventas aumentaron un 30%. ¡Increíble!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>María González</h4>
+                                    <p>Propietaria, "Helados Artesanales MG"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact-cta" id="contacto">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-left">
+                    <h2 class="cta-title">
+                        ¿Listo para <span class="text-ice">dulcificar</span> tu gestión?
+                    </h2>
+                    <p class="cta-description">
+                        Solicita una demo personalizada y descubre cómo HELARV TEC puede transformar
+                        la administración de tu heladería.
+                    </p>
+                    <div class="cta-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Llámanos</h4>
+                                <p>+57 (3122810646)HELARV-TEC</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Escríbenos</h4>
+                                <p>info@helarvtec.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario</h4>
+                                <p>Lun-Vie: 9AM - 6PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre de tu heladería">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Cuéntanos sobre tu heladería..." rows="3"></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Solicitar Demo Gratuita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo-helar.jpeg" alt="HELARV TEC Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Soluciones digitales inteligentes para heladerías.
+                        Hacemos que la gestión sea tan dulce como tus productos.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio"><i class="fas fa-ice-cream"></i> Inicio</a></li>
+                        <li><a href="#caracteristicas"><i class="fas fa-star"></i> Características</a></li>
+                        <li><a href="#demo"><i class="fas fa-play-circle"></i> Demo</a></li>
+                        <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-book"></i> Documentación</a></li>
+                        <li><a href="#"><i class="fas fa-video"></i> Tutoriales</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Soporte</a></li>
+                        <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-download"></i> Descargas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calle Helado 123, Ciudad Dulce</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@helarvtec.com</span>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Boletín de Heladerías</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="currentYear">2023</span> HELARV TEC - Soluciones digitales. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante para chat -->
+    <div class="chat-button" onclick="toggleChat()">💬</div>
+
+    <!-- Contenedor del chat -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            Herlartec Assistant
+            <span class="close-chat" onclick="toggleChat()">✖</span>
+        </div>
+
+        <div class="chat-messages" id="messages">
+            <div class="bot-message">
+                Hola 👋 soy el asistente de Herlartec.
+                Pregúntame sobre nuestros servicios o cómo contactarnos.
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="input" placeholder="Escribe tu mensaje...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
