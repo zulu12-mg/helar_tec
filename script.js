@@ -585,15 +585,15 @@ async function sendMessage() {
     messages.scrollTop = messages.scrollHeight;
 
     // Enviar petición al backend
-    const response = await fetch("http://127.0.0.1:8000/chat", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            message: userMessage
-        })
-    });
+   const response = await fetch("https://helar-tec.onrender.com/chat", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    message: userMessage
+  })
+});
 
     const data = await response.json();
 
